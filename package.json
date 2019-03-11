@@ -1,0 +1,28 @@
+{
+  "name": "column-counter-for-github-projects",
+  "version": "0.1.0",
+  "description": "Adds a tally of story points in each column of a project board on GitHub.",
+  "main": "ccghp-content.js",
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir .",
+    "test": "xo && nyc --reporter=html --reporter=text ava"
+  },
+  "xo": {
+    "space": true,
+    "envs": [
+      "browser"
+    ]
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "ava": "^1.2.1",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jsdom": "^13.2.0",
+    "nyc": "^13.3.0",
+    "web-ext": "^3.0.0",
+    "xo": "^0.24.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Column Counter for GitHub Projects",
+  "version": "0.1.0",
+  "description": "Adds a tally of story points in each column of a project board on GitHub.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["ccghp.js"],
+      "css": ["ccghp.css"]
+    }
+  ]
+}
